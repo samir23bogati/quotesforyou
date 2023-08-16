@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quote.css">
+    <title>Quotes For You.</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Generator</h1>
+        <div class="options">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="science">Science</option>
+                <option value="environment">Environment</option>
+            </select>
+            <button id="randomBtn">Random</button>
+        </div>
+        <div class="quote-container">
+            <p id="quote">Welcome to our Quote Generator </p></br>
+        </div>
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button></br>
+        </br>
+        </div>
+        <div class="font-controls">
+            <button id="decreaseFont">FontDcr</button>
+            <button id="increaseFont">FontIncr</button>
+        </div>
+        <h2>Dark Mode?Click The Black Box Below </h2>
+        <div id ="toggle">
+            <i  class="indicator"></i>
+        </div>
+       
+    </div>
+    
+    <script>
+  const body = document.querySelector('body');
+const toggle = document.getElementById('toggle');
+toggle.onclick = function(){
+    toggle.classList.toggle('active');
+    body.classList.toggle('active');
+}
+    </script>
+    <script src="quote.js"></script>
+</body>
+</html>
